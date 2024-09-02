@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: Montserrat !important;
+}
+
+/* Variables */
+:root {
+  --red: #f53855;
+  --white: #fff;
+  --icon-container-bg-color: #ffecec;
+  --body-color: #ffffff;
+}
+body {
+  background-color: var(--body-color);
+}
+
+/* Navbar Css */
+
+img {
+  width: 100% !important;
+}
+
+.logo-image {
+  width: 16px !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-span {
+  font-weight: bold;
+}
+
+.signin-btn {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+}
+
+.signup-btn {
+  font-weight: bold;
+  padding: 8px 16px;
+  color: var(--red);
+  background-color: transparent;
+  border: 2px solid var(--red);
+  border-radius: 8px;
+}
+
+/* Hero Css */
+
+.hero {
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-left-top-paragraph {
+  font-size: 50px;
+}
+
+.hero-left-bottom-paragraph {
+  font-size: 25px;
+}
+
+.hero-paragraph-span {
+  font-weight: bold;
+}
+
+.hero-btn {
+  padding: 8px 16px;
+  color: var(--white);
+  background-color: var(--red);
+  border-radius: 8px;
+  border: none;
+}
+
+/* Info Css */
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.info-left,
+.info-center,
+.info-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-icon-container,
+.location-icon-container,
+.services-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: var(--icon-container-bg-color);
+  border-radius: 30px;
+}
+
+.user-icon-container,
+.location-icon-container,
+.services-icon-container > i {
+  color: var(--red);
+  font-size: 30px;
+}
+
+.user-info,
+.location-info,
+.services-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-info > h3 {
+  font-weight: bold;
+}
+
+.vertical-line {
+  border: 1px solid #000;
+  border-width: 1.5px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+/* Feature Css */
+
+.feature {
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.feature-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.feature-right > h2 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.feature-right > p {
+  font-size: 25px;
+}
+
+.feature-right-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-right-ul li {
+  display: flex;
+  align-items: center;
+  list-style-position: inside;
+  padding-left: 0;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  list-style-image: url(./images/tick-icon.png);
+}
+
+.feature-right-ul li::marker {
+  content: "";
+}
+
+.feature-right-ul li::before {
+  content: url(./images/tick-icon.png);
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* Plans Css */
+
+.plans {
+  padding: 50px;
+}
+
+.plans-heading > h2 {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+.plans-heading > p {
+  font-size: 25px;
+  text-align: center;
+}
+
+.plan-cards {
+  padding: 50px 0px;
+  justify-content: center;
+  gap: 50px;
+}
+
+.free-plan,
+.standard-plan,
+.premium-Plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.free-plan-bottom,
+.standard-plan-bottom,
+.premium-plan-bottom {
+  width: 100%;
+}
+
+.free-btn,
+.premium-btn,
+.standard-btn {
+  font-weight: bold;
+  padding: 8px 16px;
+  width: 100%;
+  color: var(--red);
+  background-color: transparent;
+  border: 2px solid var(--red);
+  border-radius: 8px;
+}
+
+.free-plan-top,
+.standard-plan-top,
+.premium-plan-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.free-plan-center-ul,
+.standard-plan-center-ul,
+.premium-plan-center-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.main-free-top-center,
+.main-premium-top-center,
+.main-standard-top-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Location Css */
+
+.location {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.location-top > h2 {
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+}
+
+.location-top > p {
+  text-align: center;
+  font-size: 25px;
+}
+
+.location-bottom {
+  width: 100%;
+  text-align: center;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.img img {
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.author-details {
+  margin-left: 10px;
+}
+
+.review p {
+  font-style: italic;
+  color: #555;
+}
+
+/* Pagination and Navigation Styles */
+.swiper-pagination-bullet {
+  background: #007aff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #007aff;
+}
+
+@media (max-width: 768px) {
+  .swiper-slide {
+    padding: 10px;
+  }
+}
+
+.slider-review {
+  padding: 50px 0px;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.right-footer-container {
+  font-size: 30px;
+}
